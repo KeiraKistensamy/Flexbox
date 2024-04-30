@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    text-align: center;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+}
+.navBar ul{
+    list-style-type: none;
+    background-color: darkgrey;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.pic1{
+    height: 300px;
+    width: 300px;
+}
+.navBar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navBar a:hover{
+    background-color: hsl(0, 0%, 8%);
+    transition: ease-in-out 1s;
+}
+.navBar li{
+    float: left;
+}
+.image-wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    & img {
+        width: 10rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.container{
+    background-color: orange;
+    margin-left: 500px;
+    margin-right: 500px;
+}
